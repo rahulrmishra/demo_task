@@ -8,7 +8,8 @@ class ListWidget extends StatelessWidget {
     for (var i = 0; i <= 100; i++) {
       list.add(const ListItemWidget());
     }
-    return ListView.builder(itemCount: list.length,itemBuilder: (context,index)=> list[index]);
+    return ListView.builder(
+        itemCount: list.length, itemBuilder: (context, index) => list[index]);
   }
 }
 
@@ -17,7 +18,6 @@ class ListItemWidget extends StatefulWidget {
   @override
   State<ListItemWidget> createState() => _ListItemWidgetState();
 }
-
 
 class _ListItemWidgetState extends State<ListItemWidget> {
   var count = 0;
